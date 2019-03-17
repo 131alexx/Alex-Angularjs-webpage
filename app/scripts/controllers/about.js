@@ -9,9 +9,9 @@
  */
 angular.module('appApp')
   .controller('AboutCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  	self = this;
+
+  	self.section="About";
+
+  	self.name = "Àlex";
   });

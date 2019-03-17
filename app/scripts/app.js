@@ -17,12 +17,27 @@ angular
       .when('/', {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl',
-        controllerAs: 'main'
+        controllerAs: 'mainCtrl'
       })
       .when('/about', {
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl',
-        controllerAs: 'about'
+        controllerAs: 'aboutCtrl'
+      })
+      .when('/projects', {
+        templateUrl: 'views/projects.html',
+        controller: 'ProjectsCtrl',
+        controllerAs: 'projectsCtrl'
+      })
+      .when('/resume', {
+        templateUrl: 'views/resume.html',
+        controller: 'ResumeCtrl',
+        controllerAs: 'resumeCtrl'
+      })
+      .when('/contact', {
+        templateUrl: 'views/contact.html',
+        controller: 'ContactCtrl',
+        controllerAs: 'contactCtrl'
       })
       .otherwise({
         redirectTo: '/'
