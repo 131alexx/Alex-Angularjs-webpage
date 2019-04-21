@@ -14,4 +14,17 @@ angular.module('appApp')
   	self.section="About";
 
   	self.name = "Àlex";
+  	self.age = undefined;
+
+  	function init(){
+  		var now = new Date();
+  		console.log("now", now);
+  		var birth = new Date("1998-01-13");
+  		console.log("birth", birth);
+  		self.age = now.getYear()-birth.getYear();
+  		if(now.getMonth()===0&&now.getDate()<13){
+  			self.age--;
+  		}
+  	}
+  	init();
   });
