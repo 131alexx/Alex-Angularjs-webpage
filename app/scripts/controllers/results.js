@@ -29,7 +29,7 @@ angular.module( 'appApp' )
             if(vars.search){
             	self.search = vars.search;
             }
-            window.location.href = window.location.origin + window.location.search;
+            //window.location.href = window.location.origin + window.location.search;
             
 
 

@@ -74,7 +74,7 @@
                 </div>
             </div>
         </div> -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" ng-controller="TopnavCtrl as topnavCtrl">
             <a class="navbar-brand" href="#/">
                 Alex Velasco
             </a>
@@ -83,29 +83,29 @@
                 </span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#/">
+                <ul class="navbar-nav mr-auto" id="optionsNav">
+                    <li class="nav-item" ng-class="{'active': (topnavCtrl.selected==='home')}">
+                        <a class="nav-link" href="#/" ng-click="topnavCtrl.selected='home'">
                             Home
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#/projects">
+                    <li class="nav-item" ng-class="{'active': (topnavCtrl.selected==='projects')}">
+                        <a class="nav-link" href="#/projects" ng-click="topnavCtrl.selected = 'projects'">
                             Projects
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#/about">
+                    <li class="nav-item" ng-class="{'active': (topnavCtrl.selected==='about')}">
+                        <a class="nav-link" href="#/about" ng-click="topnavCtrl.selected='about'">
                             About me
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#/resume">
+                    <li class="nav-item" ng-class="{'active': (topnavCtrl.selected==='resume')}">
+                        <a class="nav-link" href="#/resume" ng-click="topnavCtrl.selected='resume'">
                             Resume
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#/contact">
+                    <li class="nav-item" ng-class="{'active': (topnavCtrl.selected==='contact')}">
+                        <a class="nav-link" href="#/contact" ng-click="topnavCtrl.selected='contact'">
                             Contact
                         </a>
                     </li>
@@ -214,6 +214,8 @@
         <script src="scripts/controllers/resume.js">
         </script>
         <script src="scripts/controllers/about.js">
+        </script>
+        <script src="scripts/controllers/topnav.js">
         </script>
         <!-- endbuild -->
     </body>
