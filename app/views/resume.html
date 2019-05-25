@@ -1,31 +1,49 @@
-<div class="jumbotron">
-    <h1 class="s-component s-text s-animation-page-slide_in">
-        Hello! {{resumeCtrl.section}}
-    </h1>
-    <p class="lead">
-        <img alt="Desk" class="img-fluid rounded-circle" src="images/desk.jpg">
-            <br>
-                This is where some candy things will be shows :P
-            </br>
-        </img>
-    </p>
-    <p>
-        <a class="btn btn-lg btn-success" ng-href="#/">
-            Love it <3
-            <span class="glyphicon glyphicon-ok">
-            </span>
-        </a>
-    </p>
-</div>
-<div class="marketing">
-    <h3>
-        Some Cool things
+<div class="jumbotron mt-5">
+    <h3 class="s-component s-text s-animation-page-slide_in">
+        This are some of my skills:
     </h3>
-    <br>
-        <br>
-            <p>
-                Do you love me like I looove you?
+    <div>
+        <h1 class="text-center m-5 w3-animate-opacity blockquote" ng-show="resumeCtrl.skill">
+            <div class="display-1">
+                
+            {{resumeCtrl.skill}}
+            </div>
+            
+            <div class="blockquote-footer float-right">{{resumeCtrl.skillType}}</div>
+        </h1>
+    </div>
+    <button class="btn btn-primary" ng-click="resumeCtrl.changeSkill()">
+        Show another
+    </button>
+    <button class="btn btn-info" ng-click="resumeCtrl.displayAll = true;">
+        Show all
+    </button>
+</div>
+<div class="w3-container">
+    <div class="row w3-animate-top" ng-if="resumeCtrl.displayAll">
+        <div class="col">
+            <h3>
+                Social Skills
+            </h3>
+            <p ng-repeat="ss in resumeCtrl.aConduct">
+                {{ss}}
             </p>
-        </br>
-    </br>
+        </div>
+        <div class="col">
+            <h3>
+                Technologies Knowledge
+            </h3>
+            <p ng-repeat="tk in resumeCtrl.aSkills">
+                {{tk}}
+            </p>
+        </div>
+        <div class="col">
+            <h3>
+                Programming languages
+            </h3>
+            <p ng-repeat="pl in resumeCtrl.aPL">
+                {{pl}}
+            </p>
+        </div>
+    </div>
 </div>

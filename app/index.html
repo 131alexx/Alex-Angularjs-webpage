@@ -3,26 +3,20 @@
     <head>
         <meta charset="utf-8">
             <title>
-                App
+                Àlex Velasco
             </title>
             <meta content="" name="description">
                 <meta content="width=device-width" name="viewport">
-                    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-                    <!-- build:css(.) styles/vendor.css -->
-                    <!-- bower:css -->
-                    <!-- endbower -->
-                    <!-- endbuild -->
-                    <!-- build:css(.tmp) styles/main.css -->
-                    <link href="styles/main.css" rel="stylesheet">
-                        <!-- endbuild -->
+                    
+                    <script  src="lib/jquery-3.3.1.slim.min.js">
+                    </script>
+                    <script src="lib/popper.min.js">
+                    </script>
+                    <script src="lib/bootstrap.min.js">
+                    </script>
+                    <link href="lib/bootstrap.min.css"rel="stylesheet">
                     </link>
-                    <script crossorigin="anonymous" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
-                    </script>
-                    <script crossorigin="anonymous" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
-                    </script>
-                    <script crossorigin="anonymous" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
-                    </script>
-                    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
+                    <link href="lib/w3.css"rel="stylesheet">
                     </link>
                 </meta>
             </meta>
@@ -111,8 +105,8 @@
                     </li>
                 </ul>
                 <form action="#/results" class="form-inline my-2 my-lg-0" method="GET">
-                    <input aria-label="Search" class="form-control mr-sm-2" name="search" placeholder="Search" type="text"/>
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                    <input class="form-control mr-sm-2" name="search" placeholder="Search" type="text"/>
+                    <button class="btn btn-outline-success my-2 my-sm-0" >
                         Search
                     </button>
                 </form>
@@ -122,6 +116,7 @@
             <div ng-view="">
             </div>
         </div>
+        <hr>
         <div class="footer">
             <div class="container row">
                 <!-- <p>
