@@ -1,23 +1,26 @@
-<div class="jumbotron mt-5">
+<div class="jumbotron mt-5 h-50">
     <h3 class="s-component s-text s-animation-page-slide_in">
-        This are some of my skills:
+        Some of my skills:
     </h3>
     <div>
         <h1 class="text-center m-5 w3-animate-opacity blockquote" ng-show="resumeCtrl.skill">
-            <div class="display-1">
-                
-            {{resumeCtrl.skill}}
+            <div class="display-1 h-50">
+                {{resumeCtrl.skill}}
             </div>
-            
-            <div class="blockquote-footer float-right">{{resumeCtrl.skillType}}</div>
+            <div class="blockquote-footer float-right">
+                {{resumeCtrl.skillType}}
+            </div>
         </h1>
     </div>
+    <div >
+        
     <button class="btn btn-primary" ng-click="resumeCtrl.changeSkill()">
         Show another
     </button>
     <button class="btn btn-info" ng-click="resumeCtrl.displayAll = true;">
         Show all
     </button>
+    </div>
 </div>
 <div class="w3-container">
     <div class="row w3-animate-top" ng-if="resumeCtrl.displayAll">
@@ -45,5 +48,24 @@
                 {{pl}}
             </p>
         </div>
+    </div>
+</div>
+<h4>
+    Non-computer Skills
+</h4>
+<div ng-repeat="skill in resumeCtrl.aOtherSkills">
+    <div class="row m-3">
+        
+            <h5 class="col-3">
+                <strong>
+                    
+                {{skill.name}}
+                </strong>
+            
+            </h5>
+            <div class=" col mt-3 ml-3">
+                - {{skill.type}}
+            </div>
+        
     </div>
 </div>

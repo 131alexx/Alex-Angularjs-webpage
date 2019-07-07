@@ -7,67 +7,21 @@
             </title>
             <meta content="" name="description">
                 <meta content="width=device-width" name="viewport">
-                    
-                    <script  src="lib/jquery-3.3.1.slim.min.js">
+                    <script src="lib/jquery-3.3.1.slim.min.js">
                     </script>
                     <script src="lib/popper.min.js">
                     </script>
                     <script src="lib/bootstrap.min.js">
                     </script>
-                    <link href="lib/bootstrap.min.css"rel="stylesheet">
+                    <link href="lib/bootstrap.min.css" rel="stylesheet">
                     </link>
-                    <link href="lib/w3.css"rel="stylesheet">
+                    <link href="lib/w3.css" rel="stylesheet">
                     </link>
                 </meta>
             </meta>
         </meta>
     </head>
     <body ng-app="appApp">
-        <!--[if lte IE 8]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-        <!-- Add your site or application content here -->
-        <!--      <div class="header">
-            <div class="navbar navbar-default" role="navigation">
-                <div class="container">
-                    <div class="navbar-header">
-                        <button class="navbar-toggle collapsed" data-target="#js-navbar-collapse" data-toggle="collapse" type="button">
-                            <span class="sr-only">
-                                Toggle navigation
-                            </span>
-                            <span class="icon-bar">
-                            </span>
-                            <span class="icon-bar">
-                            </span>
-                            <span class="icon-bar">
-                            </span>
-                        </button>
-                        <a class="navbar-brand" href="#/">
-                            app
-                        </a>
-                    </div>
-                    <div class="collapse navbar-collapse" id="js-navbar-collapse">
-                        <ul class="nav navbar-nav">
-                            <li class="active">
-                                <a href="#/">
-                                    Home
-                                </a>
-                            </li>
-                            <li>
-                                <a ng-href="#/about">
-                                    About
-                                </a>
-                            </li>
-                            <li>
-                                <a ng-href="#/">
-                                    Contact
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div> -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light" ng-controller="TopnavCtrl as topnavCtrl">
             <a class="navbar-brand" href="#/">
                 Alex Velasco
@@ -104,12 +58,12 @@
                         </a>
                     </li>
                 </ul>
-                <form action="#/results" class="form-inline my-2 my-lg-0" method="GET">
+                <!--<form action="#/results" class="form-inline my-2 my-lg-0" method="GET">
                     <input class="form-control mr-sm-2" name="search" placeholder="Search" type="text"/>
                     <button class="btn btn-outline-success my-2 my-sm-0" >
                         Search
                     </button>
-                </form>
+                </form>-->
             </div>
         </nav>
         <div class="container">
@@ -117,101 +71,80 @@
             </div>
         </div>
         <hr>
-        <div class="footer">
-            <div class="container row">
-                <!-- <p>
+            <div class="footer">
+                <div class="container row">
+                    <!-- <p>
                     <span class="glyphicon glyphicon-heart">
                     </span>
                     from the Yeoman team
                 </p> -->
-                <div class="col text-center">
-                    <h5>
-                        Projects on GitHub
-                    </h5>
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="https://github.com/131alexx/Alex-Angularjs-webpage" target="_blank">
-                                AngularJS (This web)
-                            </a>
-                        </li>
-                        <li class="ml-1">
-                            <h5>
-                                First Projects
-                            </h5>
-                            <ul class="list-unstyled">
-                                <li>
-                                    <a href="https://github.com/131alexx/Public-IP-sent-using-bash-scripting" target="_blank">
-                                        Mail IP sending for Linux
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://github.com/131alexx/Public-IP-sent-using-batch-scripting" target="_blank">
-                                        Mail IP sending for Windows
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col text-center">
-                    <h5>
-                        About me
-                    </h5>
-                    <ul class="list-unstyled">
-                        <li>
-                            Resume
-                        </li>
-                        <li>
-                            Funny things
-                        </li>
-                        <li>
-                            Free time
-                        </li>
-                        <li>
-                            Contact
-                        </li>
-                    </ul>
+                    <div class="col text-center">
+                        <h5>
+                            Projects on GitHub
+                        </h5>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="https://github.com/131alexx/cv-webpage" target="_blank">
+                                    CV webpage (This web)
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/131alexx/dynamic-IP-notification" target="_blank">
+                                    Dynamic IP notification
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/131alexx/start-automating" target="_blank">
+                                    Starting on DevOps
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/willyw0nka/WikiMap" target="_blank">
+                                    WikiMap
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col text-center">
+                        <h5>
+                            About me
+                        </h5>
+                        <ul class="list-unstyled">
+                            <li>
+                                Resume
+                            </li>
+                            <li>
+                                Funny things
+                            </li>
+                            <li>
+                                Free time
+                            </li>
+                            <li>
+                                Contact
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-        <!-- <script>
-            !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
-       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
-       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
-       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-       ga('create', 'UA-XXXXX-X');
-       ga('send', 'pageview');
-        </script> -->
-        <!-- build:js(.) scripts/vendor.js -->
-        <!-- bower:js -->
-        <!-- endbower -->
-        <!-- endbuild -->
-        <!-- <script data-main="scripts/main" 
-        src="../node_modules/requirejs/require.js"></script> -->
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.32/angular.min.js">
-        </script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js">
-        </script>
-        <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <!-- <script type="text/javascript"  src="/node_modules/require.js" data-main="app/main.js"></script> -->
-        <script src="scripts/app.js">
-        </script>
-        <script src="scripts/controllers/main.js">
-        </script>
-        <script src="scripts/controllers/projects.js">
-        </script>
-        <script src="scripts/controllers/contact.js">
-        </script>
-        <script src="scripts/controllers/results.js">
-        </script>
-        <script src="scripts/controllers/resume.js">
-        </script>
-        <script src="scripts/controllers/about.js">
-        </script>
-        <script src="scripts/controllers/topnav.js">
-        </script>
-        <!-- endbuild -->
+            <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.32/angular.min.js">
+            </script>
+            <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js">
+            </script>
+            <script src="scripts/app.js">
+            </script>
+            <script src="scripts/controllers/main.js">
+            </script>
+            <script src="scripts/controllers/projects.js">
+            </script>
+            <script src="scripts/controllers/contact.js">
+            </script>
+            <script src="scripts/controllers/resume.js">
+            </script>
+            <script src="scripts/controllers/about.js">
+            </script>
+            <script src="scripts/controllers/topnav.js">
+            </script>
+            <!-- endbuild -->
+        </hr>
     </body>
 </html>
