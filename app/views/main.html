@@ -1,15 +1,70 @@
-<div class="jumbotron">
-  <h1>Hello!</h1>
-  <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-     This is where some candy things will be shows :P
-  </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#/">Love it <3<span class="glyphicon glyphicon-ok"></span></a></p>
+<h1>
+    Welcome to my webpage!
+</h1>
+<div class="row">
+    <p class="col-7 lead text-center">
+        <img alt="Me" class="w-75 rounded border border-dark" src="images/comedor.jpeg">
+            <br/>
+                Not a candy but me 😏
+            <br/>
+        </img>
+    </p>
+    <div class="col-5 align-middle">
+        <div ng-if="mainCtrl.ingame">
+            Try to click the ball!
+        </div>
+        <div ng-if=" ! mainCtrl.ingame ">
+            <h3>
+                You win!!
+            </h3>
+            <h6>
+                Click the ball to play again.
+            </h6>
+        </div>
+        <br/>
+        <svg height="{{mainCtrl.square.height}}" width="{{mainCtrl.square.width}}">
+            <rect height="{{mainCtrl.square.height}}" 
+                  rx="20" 
+                  ry="20" 
+                  style="fill:rgb(255,255,255);stroke-width:10;stroke:rgb(0,0,0)" 
+                  width="{{mainCtrl.square.width}}">
+            </rect>
+            <circle cx="{{mainCtrl.circle.centerx}}" 
+                    cy="{{mainCtrl.circle.centery}}" 
+                    fill="brown  " 
+                    ng-click="mainCtrl.win()" 
+                    ng-mouseover="mainCtrl.overBall()" 
+                    r="{{mainCtrl.circle.radius}}" 
+                    stroke="black" 
+                    stroke-width="4">
+            </circle>
+        </svg>
+    </div>
+</div>
+<div class="marketing">
+    <h3>
+        Some Cool things
+    </h3>
+    <br>
+        <br>
+            <p>
+                Do you love me like I looove you?
+            </p>
+        </br>
+    </br>
 </div>
 
-<div class="marketing">
-  <h3>Some Cool things</h3>
-  <br>
-  <br>
-  <p>Do you love me like I looove you?</p>
-</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
