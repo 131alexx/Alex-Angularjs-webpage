@@ -1,2 +1,3 @@
-# Angularjs-App
-My fist Homemade Angular App
+# CV Webpage
+This is my first webpage project, made with AngularJS but improving it when I can.
+
