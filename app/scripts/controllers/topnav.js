@@ -5,7 +5,7 @@ angular.module( 'appApp' )
     this.section = "topNav";
     this.selected = "";
     this.aLanguages = [ ];
-    this.langSelected = 'es';
+    this.langSelected = 'en';
     /***xivato***/
     this.xivato = function ( ) {
         // console.log( "self", this );

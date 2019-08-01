@@ -61,7 +61,8 @@ angular
                     "LINKEDINVISIT":"Visit my profile!"
                 },
                 "MAIN":{
-                    "WELCOME": "Not a candy but me 😏",
+                    "WELCOME":"Welcome to my webpage!",
+                    "CANDY": "Not a candy but me 😏",
                     "CLICK1":"Try to click the ball!",
                     "WIN":"You win!!",
                     "CLICK2":"Click the ball to play again."
@@ -78,11 +79,12 @@ angular
                 "CONTACT":{
                     "CONTACTME":"Puedes contactarme mediante...",
                     
-                    "PHONE":"Telefono:",
+                    "PHONE":"Teléfono:",
                     "LINKEDINVISIT":"Visita mi perfil!"
                 },
                 "MAIN":{
-                    "WELCOME": "No soy un caramelo per casi 😏",
+                    "WELCOME":"Bienvenido a mi pagina web!",
+                    "CANDY": "No soy un caramelo pero casi 😏",
                     "CLICK1":"Intenta clicar la bola!",
                     "WIN":"Has ganado!!",
                     "CLICK2":"Clic a la bola para jugar de nuevo."
@@ -95,7 +97,30 @@ angular
 
             });
 
+$translateProvider.translations('ca', {
+                "TEST": "Hola",
+                "ABOUT":{},
+                "CONTACT":{
+                    "CONTACTME":"Pots contactar-me mitjançant...",
+                    
+                    "PHONE":"Telèfon:",
+                    "LINKEDINVISIT":"Visita el meu perfil!"
+                },
+                "MAIN":{
+                    "WELCOME":"Benvingut a la meva pàgina web!",
+                    "CANDY": "No soc un caramel però casi 😏",
+                    "CLICK1":"Intenta clicar la bola!",
+                    "WIN":"Has guanyat!!",
+                    "CLICK2":"Clic a la bola per tornar a jugar."
+                },
+                "PROJECTS":{},
+                "RESUME":{},
+                "TOPNAV":{},
+                "GENERAL":{}
 
-             $translateProvider.preferredLanguage('es');
+
+            });
+
+             $translateProvider.preferredLanguage('en');
 
     } );

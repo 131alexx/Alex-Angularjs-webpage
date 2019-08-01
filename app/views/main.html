@@ -1,27 +1,24 @@
 <h1>
-    Welcome to my webpage!
+    {{ 'MAIN.WELCOME' | translate }}
 </h1>
 <div class="row">
-    <p class="col-7 lead text-center">
-        <img alt="Me" class="w-75 rounded border border-dark" src="images/comedor.jpeg">
+    <p class="p-3 col-7 lead text-center">
+        <img alt="Me" class="w-75 rounded border border-dark" src="images/comedor.jpeg"/>
             <br/>
-                Not a candy but me 😏
+                {{ 'MAIN.CANDY' | translate }}
             <br/>
-            <div>
-                {{'TEST' | translate}}
-            </div>
-        </img>
+        
     </p>
     <div class="col-5 align-middle" style="position: relative;">
         <div ng-if="mainCtrl.ingame" style="top: 0;position: absolute;">
-            Try to click the ball!
+            {{ 'MAIN.CLICK1' | translate }}
         </div>
         <div ng-if=" ! mainCtrl.ingame " style="top: 0;position: absolute;">
             <h3>
-                You win!!
+                {{ 'MAIN.WIN' | translate }}
             </h3>
             <h6>
-                Click the ball to play again.
+                {{ 'MAIN.CLICK2' | translate }}
             </h6>
         </div>
         <br/>
