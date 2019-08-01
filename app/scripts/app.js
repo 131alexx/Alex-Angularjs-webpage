@@ -10,9 +10,11 @@
  */
 angular
     .module( 'appApp', [
-    'ngRoute'
+    'ngRoute',
+    'pascalprecht.translate'
   ] )
-    .config( function ( $routeProvider ) {
+    .config( function ( $routeProvider, $translateProvider ) {
+        console.log("$translateProvider", $translateProvider);
         $routeProvider
             .when( '/', {
                 templateUrl: 'views/main.html'
@@ -47,4 +49,17 @@ angular
             .otherwise( {
                 redirectTo: '/'
             } );
+
+
+            $translateProvider.translations('es', {
+                "TEST": "Hola"
+            });
+
+            $translateProvider.translations('en', {
+                "TEST": "Hello"
+            });
+
+
+             $translateProvider.preferredLanguage('en');
+
     } );
