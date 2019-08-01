@@ -9,11 +9,11 @@
             <br/>
         </img>
     </p>
-    <div class="col-5 align-middle">
-        <div ng-if="mainCtrl.ingame">
+    <div class="col-5 align-middle" style="position: relative;">
+        <div ng-if="mainCtrl.ingame" style="top: 0;position: absolute;">
             Try to click the ball!
         </div>
-        <div ng-if=" ! mainCtrl.ingame ">
+        <div ng-if=" ! mainCtrl.ingame " style="top: 0;position: absolute;">
             <h3>
                 You win!!
             </h3>
@@ -22,6 +22,8 @@
             </h6>
         </div>
         <br/>
+        <div style="top: 100px;position: absolute;">
+          
         <svg height="{{mainCtrl.square.height}}" width="{{mainCtrl.square.width}}">
             <rect height="{{mainCtrl.square.height}}" 
                   rx="20" 
@@ -39,5 +41,6 @@
                     stroke-width="4">
             </circle>
         </svg>
+        </div>
     </div>
 </div>
