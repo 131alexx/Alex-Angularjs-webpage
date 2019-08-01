@@ -3,11 +3,11 @@
         Some of my skills:
     </h3>
     <div>
-        <h1 class="text-center m-5 w3-animate-opacity blockquote" ng-show="resumeCtrl.skill">
+        <h1 style="height: 250px;position: relative;" class="text-center p-5 w3-animate-opacity blockquote" ng-show="resumeCtrl.skill">
             <div class="display-1 h-50">
                 {{resumeCtrl.skill}}
             </div>
-            <div class="blockquote-footer float-right">
+            <div class="blockquote-footer float-right" style="position: absolute;bottom: 0; right: 0">
                 {{resumeCtrl.skillType}}
             </div>
         </h1>
@@ -25,7 +25,7 @@
 <div class="w3-container">
     <div class="row w3-animate-top" ng-if="resumeCtrl.displayAll">
         <div class="col">
-            <h3>
+            <h3 class="rounded bg-info text-light p-2">
                 Social Skills
             </h3>
             <p ng-repeat="ss in resumeCtrl.aConduct">
@@ -33,7 +33,7 @@
             </p>
         </div>
         <div class="col">
-            <h3>
+            <h3 class="rounded bg-info text-light p-2">
                 Technologies Knowledge
             </h3>
             <p ng-repeat="tk in resumeCtrl.aSkills">
@@ -41,7 +41,7 @@
             </p>
         </div>
         <div class="col">
-            <h3>
+            <h3 class="rounded bg-info text-light p-2">
                 Programming languages
             </h3>
             <p ng-repeat="pl in resumeCtrl.aPL">
@@ -49,7 +49,7 @@
             </p>
         </div>
         <div class="col">
-            <h3>
+            <h3 class="rounded bg-info text-light p-2">
                 Learning Technologies
             </h3>
             <p ng-repeat="lt in resumeCtrl.aLT">
@@ -58,8 +58,8 @@
         </div>
     </div>
 </div>
-<h4>
-    Non-computer Skills
+<h4 class="rounded bg-info text-light p-2">
+     Non-computer Skills
 </h4>
 <div ng-repeat="skill in resumeCtrl.aOtherSkills">
     <div class="row m-3">
