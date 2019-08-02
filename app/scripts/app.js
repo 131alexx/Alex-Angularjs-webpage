@@ -70,7 +70,15 @@ angular
                 "PROJECTS":{},
                 "RESUME":{},
                 "TOPNAV":{},
-                "GENERAL":{}
+                "GENERAL":{
+                    "HOME":"Home",
+                    "PROJECTS":"Projects",
+                    "ABOUTME":"About me",
+                    "RESUME":"Resume",
+                    "CONTACT":"Contact",
+                    "FREET":"Free time",
+                    "PROJECTSGH":"Projects on GitHub"
+                }
             });
 
             $translateProvider.translations('es', {
@@ -92,7 +100,15 @@ angular
                 "PROJECTS":{},
                 "RESUME":{},
                 "TOPNAV":{},
-                "GENERAL":{}
+                "GENERAL":{
+                    "HOME":"Principal",
+                    "PROJECTS":"Proyectos",
+                    "ABOUTME":"Sobre mi",
+                    "RESUME":"Curriculum",
+                    "CONTACT":"Contacto",
+                    "FREET":"Tiempo libre",
+                    "PROJECTSGH":"Proyectos en GitHub"
+                }
 
 
             });
@@ -116,7 +132,15 @@ $translateProvider.translations('ca', {
                 "PROJECTS":{},
                 "RESUME":{},
                 "TOPNAV":{},
-                "GENERAL":{}
+                "GENERAL":{
+                    "HOME":"Principal",
+                    "PROJECTS":"Projectes",
+                    "ABOUTME":"Sobre mi",
+                    "RESUME":"Curriculum",
+                    "CONTACT":"Contacte",
+                    "FREET":"Temps lliure",
+                    "PROJECTSGH":"Projectes a GitHub"
+                }
 
 
             });

@@ -34,27 +34,27 @@
                 <ul class="navbar-nav mr-auto" id="optionsNav">
                     <li class="nav-item" ng-class="{'active': (topnavCtrl.selected==='home')}">
                         <a class="nav-link" href="#/" ng-click="topnavCtrl.selected='home'">
-                            Home
+                            {{ 'GENERAL.HOME' | translate }}
                         </a>
                     </li>
                     <li class="nav-item" ng-class="{'active': (topnavCtrl.selected==='projects')}">
                         <a class="nav-link" href="#/projects" ng-click="topnavCtrl.selected = 'projects'">
-                            Projects
+                            {{ 'GENERAL.PROJECTS' | translate }}
                         </a>
                     </li>
                     <li class="nav-item" ng-class="{'active': (topnavCtrl.selected==='about')}">
                         <a class="nav-link" href="#/about" ng-click="topnavCtrl.selected='about'">
-                            About me
+                            {{ 'GENERAL.ABOUTME' | translate }}
                         </a>
                     </li>
                     <li class="nav-item" ng-class="{'active': (topnavCtrl.selected==='resume')}">
                         <a class="nav-link" href="#/resume" ng-click="topnavCtrl.selected='resume'">
-                            Resume
+                            {{ 'GENERAL.RESUME' | translate }}
                         </a>
                     </li>
                     <li class="nav-item" ng-class="{'active': (topnavCtrl.selected==='contact')}">
                         <a class="nav-link" href="#/contact" ng-click="topnavCtrl.selected='contact'">
-                            Contact
+                            {{ 'GENERAL.CONTACT' | translate }}
                         </a>
                     </li>
                 </ul>
@@ -82,7 +82,7 @@
                 </p> -->
                     <div class="col text-center">
                         <h5>
-                            Projects on GitHub
+                            {{ 'GENERAL.PROJECTSGH' | translate }}
                         </h5>
                         <ul class="list-unstyled">
                             <li>
@@ -109,22 +109,22 @@
                     </div>
                     <div class="col text-center">
                         <h5>
-                            About me
+                            {{ 'GENERAL.ABOUTME' | translate }}
                         </h5>
                         <ul class="list-unstyled">
                             <li>
                                 <a href="#/resume">
-                                    Resume
+                                    {{ 'GENERAL.RESUME' | translate }}
                                 </a>
                             </li>
                             <li>
                                 <a href="#/free">
-                                    Free time
+                                    {{ 'GENERAL.FREET' | translate }}
                                 </a>
                             </li>
                             <li>
                                 <a href="#/contact">
-                                    Contact
+                                    {{ 'GENERAL.CONTACT' | translate }}
                                 </a>
                             </li>
                         </ul>
