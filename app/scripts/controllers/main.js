@@ -17,9 +17,9 @@ angular.module( 'appApp' )
     this.delay = 0;
     this.ingame = true;
     this.intransition = false;
-    
+
     this.overBall = function ( ) {
-        
+
 
         function random( min, max ) {
             return Math.floor( Math.random( ) * ( max - min ) ) + min;
@@ -31,33 +31,36 @@ angular.module( 'appApp' )
             var newX = random( rad, this.square.width - rad );
 
             var newY = random( rad, this.square.height - rad );
-            
-            
+
+
 
             setTimeout( this.changeBallPosition, this.delay, newX, newY );
         }
 
     };
     this.win = ( ) => {
-        
+
         this.ingame = !this.ingame;
         if ( !this.ingame ) {
             this.intransition = false;
             this.delay = 0;
-        } else
-        this.overBall( );
+        } else {
+
+            this.overBall( );
+
+        }
 
     };
 
     this.changeBallPosition = ( x, y ) => {
 
-        
+
         if ( this.ingame ) {
 
             this.circle.centerx = x;
             this.circle.centery = y;
             this.delay += 15;
-            
+
             this.intransition = false;
         }
     };
