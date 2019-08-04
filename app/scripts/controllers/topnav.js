@@ -10,7 +10,6 @@ angular.module( 'appApp' )
     this.xivato = function ( ) {};
     this.changeLang = ( ) => {
 
-        console.log( "this.langSelected", this.langSelected );
         $translate.use( this.langSelected );
         localStorage.lang = this.langSelected;
     }
@@ -27,13 +26,10 @@ angular.module( 'appApp' )
         } else {
             self.selected = angular.copy( window.location.hash.split( "/" )[ 1 ] );
         }
-            console.log("localStorage", localStorage);
-        if(localStorage.lang){
+        if ( localStorage.lang ) {
             this.langSelected = localStorage.lang;
-            $translate.use( this.langSelected );            
-        }
-        else
-        {
+            $translate.use( this.langSelected );
+        } else {
             this.langSelected = 'en';
             localStorage.lang = this.langSelected;
             $translate.use( this.langSelected );

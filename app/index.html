@@ -58,7 +58,7 @@
                         </a>
                     </li>
                 </ul>
-                <select ng-model="topnavCtrl.langSelected" ng-options="lang.lang as lang.name for lang in topnavCtrl.aLanguages" ng-change="topnavCtrl.changeLang()" class="form-control col-2">
+                <select class="form-control col-2" ng-change="topnavCtrl.changeLang()" ng-model="topnavCtrl.langSelected" ng-options="lang.lang as lang.name for lang in topnavCtrl.aLanguages">
                 </select>
                 <!--<form action="#/results" class="form-inline my-2 my-lg-0" method="GET">
                     <input class="form-control mr-sm-2" name="search" placeholder="Search" type="text"/>
