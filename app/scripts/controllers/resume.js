@@ -26,7 +26,7 @@ angular.module( 'appApp' )
         this.skill = element;
         if ( this.aConduct.indexOf( this.skill ) !== -1 ) this.skillType = "Social Skill";
 
-        if ( this.aSkills.indexOf( this.skill ) !== -1 ) this.skillType = "Technologies Knowledge";
+        if ( this.aSkills.indexOf( this.skill ) !== -1 ) this.skillType = "Technology Knowledge";
 
         if ( this.aPL.indexOf( this.skill ) !== -1 ) this.skillType = "Programming Language";
 
@@ -40,7 +40,7 @@ angular.module( 'appApp' )
     };
     //Init function
     ( ( ) => {
-        this.changeSkill( );
+        this.changeSkill( );    
         this.addOtherSkill("Native Catalan","Language");
 
         this.addOtherSkill("Native Spanish","Language");

@@ -45,16 +45,16 @@ angular
     $translateProvider.translations( 'en', {
         "TEST": "Hello",
         "ABOUT": {
-            "REGARDS":"Hello!",
-            "PRESENTATION1":"I'm Àlex and this my about page.",
-            "PRESENTATION21":"I'm a ",
-            "PRESENTATION22":"year old guy passionate about computer science and mathematics.",
-            "ILOVE":"About what I love",
-            "DESCILOVE":"In my free time, I listen to music, go out with my friends, read things on the Internet and do some exercise (as much as I can). I love traveling with my family and discover new places with natural landscapes.",
-            "MYSTUDY":"About my studies",
-            "DESCMYSTUDY":"In 2016 I entered the UAB(Autonomous University of Barcelona) and coursed a computer engeneering since today. I specialized on the section of ITC (Information and Comunication Technologies).",
-            "MYEXP":"About my work experience",
-            "DESCMYEXP":"I've worked as a Front-End for a few months, where i learned the basics of the web development. I'm currently learning the system administrator job and enriching my experience a lot. I love learning new things!"
+            "REGARDS": "Hello!",
+            "PRESENTATION1": "I'm Àlex and this my about page.",
+            "PRESENTATION21": "I'm a ",
+            "PRESENTATION22": "year old guy passionate about computer science and mathematics.",
+            "ILOVE": "About what I love",
+            "DESCILOVE": "In my free time, I listen to music, go out with my friends, read things on the Internet and do some exercise (as much as I can). I love traveling with my family and discover new places with natural landscapes.",
+            "MYSTUDY": "About my studies",
+            "DESCMYSTUDY": "In 2016 I entered the UAB(Autonomous University of Barcelona) and coursed a computer engeneering since today. I specialized on the section of ITC (Information and Comunication Technologies).",
+            "MYEXP": "About my work experience",
+            "DESCMYEXP": "I've worked as a Front-End for a few months, where i learned the basics of the web development. I'm currently learning the system administrator job and enriching my experience a lot. I love learning new things!"
         },
         "CONTACT": {
             "CONTACTME": "You can contact me using...",
@@ -81,7 +81,34 @@ angular
             "DESCCVWEB": "This project is the webpage you are reading right now, and was made just to test my own skills and what I learned as a Front-End developer. If you want to see the source code, go check it. ;)",
             "DESCSTARTDO": "The objective of this project is to make an easy way to deploy machines without having to buy an infrastructure to test it. You can deploy a few machines very fast and start testing tools like Ansible. DevOps culture, hello world!"
         },
-        "RESUME": {},
+        "RESUME": {
+            "SOMESKILLS": "Some of my skills:",
+            "SHOWANOTHER": "Show another",
+            "SHOWALL": "Show all",
+            "SOCIALSKILL": "Social Skill",
+            "SOCIALSKILLS": "Social Skills",
+            "TECHKNOW": "Technology Knowledge",
+            "TECHKNOWS": "Technologies Knowledge",
+            "PROGLANG": "Programming Language",
+            "PROGLANGS": "Programming Languages",
+            "LEARNTECH": "Learning Technology",
+            "LEARNTECHS": "Learning Technologies",
+            "NONCOMP": "Non-computer Skills",
+            "LANG": "Language",
+            "MOBIL": "Mobility",
+            "SS": {
+                "TW": "Teamworking skills",
+                "GOODINT": "Good interpersonal relations",
+                "EFFCOM": "Efective Communication",
+                "CURI": "Curiosity"
+            },
+            "NCS": {
+                "CAT": "Native Catalan",
+                "ES": "Native Spanish",
+                "EN": "Upper Intermediate English",
+                "CAR": "B2 Car License"
+            }
+        },
         "GENERAL": {
             "HOME": "Home",
             "PROJECTS": "Projects",
@@ -97,16 +124,16 @@ angular
     $translateProvider.translations( 'es', {
         "TEST": "Hola",
         "ABOUT": {
-                 "REGARDS":"Buenas!",
-            "PRESENTATION1":"Soy Àlex, y esta es la página sobre mi.",
-            "PRESENTATION21":"Soy un chico de ",
-            "PRESENTATION22":"años apasionado por la informatica y las matemáticas.",
-            "ILOVE":"Sobre lo que me encanta",
-            "DESCILOVE":"En mi tiempo libre, escucho musica, salgo con amigos, leo actualidad en Internet y hago ejercicio (tanto como puedo). Me encanta viajar con mi familia y descubrir nuevos sitios con paisajes naturales.",
-            "MYSTUDY":"Sobre mis estudios",
-            "DESCMYSTUDY":"En 2016 entré en la UAB (Universidad Autonoma de Barcelona) y comencé una ingenieria informatica hasta hoy. Estoy especializadoen la sección de TIC (Tecnologias de la Información y Comunicación).",
-            "MYEXP":"Sobre mi experiencia laboral",
-            "DESCMYEXP":"He trabajado como desarrollador Front-End durante unos meses, donde aprendí las bases del desarrollo web. Actualmente estoy aprendiendo el trabajo de un administrador de sistemas y enriqueciendo muchísimo mi experiencia. Me encanta aprender cosas nuevas!"
+            "REGARDS": "Buenas!",
+            "PRESENTATION1": "Soy Àlex, y esta es la página sobre mi.",
+            "PRESENTATION21": "Soy un chico de ",
+            "PRESENTATION22": "años apasionado por la informatica y las matemáticas.",
+            "ILOVE": "Sobre lo que me encanta",
+            "DESCILOVE": "En mi tiempo libre, escucho musica, salgo con amigos, leo actualidad en Internet y hago ejercicio (tanto como puedo). Me encanta viajar con mi familia y descubrir nuevos sitios con paisajes naturales.",
+            "MYSTUDY": "Sobre mis estudios",
+            "DESCMYSTUDY": "En 2016 entré en la UAB (Universidad Autonoma de Barcelona) y comencé una ingenieria informatica hasta hoy. Estoy especializadoen la sección de TIC (Tecnologias de la Información y Comunicación).",
+            "MYEXP": "Sobre mi experiencia laboral",
+            "DESCMYEXP": "He trabajado como desarrollador Front-End durante unos meses, donde aprendí las bases del desarrollo web. Actualmente estoy aprendiendo el trabajo de un administrador de sistemas y enriqueciendo muchísimo mi experiencia. Me encanta aprender cosas nuevas!"
         },
         "CONTACT": {
             "CONTACTME": "Puedes contactarme mediante...",
@@ -133,7 +160,34 @@ angular
             "DESCCVWEB": "Este proyecto es la web que estas leyendo ahora mismo, y comenzó para poner a prueba mis habilidades adquiridas y lo que aprendí como desarrollador Front-End. Si quieres ver el codigo fuente, ve a comprovarlo. ;)",
             "DESCSTARTDO": "El objetivo de este proyecto es hacer sencillo el desplegamiento de maquinas sin la necesidad de tener que comprar una infraestructura para hacer pruebas. Puedes desplegar una pocas maquinas muy rapido y comenzar a probar herramientas como Ansible. Cultura DevOps, hello world!"
         },
-        "RESUME": {},
+        "RESUME": {
+            "SOMESKILLS": "Algunas habilidades:",
+            "SHOWANOTHER": "Mostrar otra",
+            "SHOWALL": "Mostrar todas",
+            "SOCIALSKILL": "Habilidad Social",
+            "SOCIALSKILLS": "Habilidades Sociales",
+            "TECHKNOW": "Conocimiento de Tecnologia",
+            "TECHKNOWS": "Conocimiento de Tecnologias",
+            "PROGLANG": "Lenguaje de Programación",
+            "PROGLANGS": "Lenguajes de Programación",
+            "LEARNTECH": "Tecnologia en Arendizaje",
+            "LEARNTECHS": "Tecnologias en Aprendizaje",
+            "NONCOMP": "Habilidades no Informáticas",
+            "LANG": "Idioma",
+            "MOBIL": "Mobilidad",
+            "SS": {
+                "TW": "Trabajo en equipo",
+                "GOODINT": "Buenas Relaciones Interpersonales",
+                "EFFCOM": "Comunicación Efectiva",
+                "CURI": "Curiosidad"
+            },
+            "NCS": {
+                "CAT": "Catalan Nativo",
+                "ES": "Castellano Nativo",
+                "EN": "Inglés Medio - Alto",
+                "CAR": "Carnet de Conducir de coche B2"
+            }
+        },
         "GENERAL": {
             "HOME": "Inicio",
             "PROJECTS": "Proyectos",
@@ -151,16 +205,16 @@ angular
     $translateProvider.translations( 'ca', {
         "TEST": "Hola",
         "ABOUT": {
-                 "REGARDS":"Bones!",
-            "PRESENTATION1":"Soc Àlex, i aquesta és la pàgina sobre mi.",
-            "PRESENTATION21":"Soc un noi de ",
-            "PRESENTATION22":"anys apassionat per la informàtica y las matemàtiques.",
-            "ILOVE":"Sobre el que m'encanta",
-            "DESCILOVE":"En el meu temps lliure, escolto música, surto amb els amics, llegeixo l'actualitat a Internet i faig exercici (tant com puc). M'encanta viatjar amb la meva familia i descobrir nous llocs amb paissatges naturals.",
-            "MYSTUDY":"Sobre els meus estudis",
-            "DESCMYSTUDY":"Al 2016 vaig entrar a la UAB (Universitat Autonóma de Barcelona) i vaig començar una enginyeria informatica fins avui. Estic especialitzat a la secció de les TIC (Tecnologies de la Informació y Communicació).",
-            "MYEXP":"Sobre la meva experiència laboral",
-            "DESCMYEXP":"He treballat com a desenvolupador Front-end durant uns mesos, on vaig aprendre les bases del desenvolupament web. Actualmente estic aprenent la feina d'administrador de sistemes i enriquient moltissim la meva experiencia. M'encanta aprendre coses noves!"
+            "REGARDS": "Bones!",
+            "PRESENTATION1": "Soc Àlex, i aquesta és la pàgina sobre mi.",
+            "PRESENTATION21": "Soc un noi de ",
+            "PRESENTATION22": "anys apassionat per la informàtica y las matemàtiques.",
+            "ILOVE": "Sobre el que m'encanta",
+            "DESCILOVE": "En el meu temps lliure, escolto música, surto amb els amics, llegeixo l'actualitat a Internet i faig exercici (tant com puc). M'encanta viatjar amb la meva familia i descobrir nous llocs amb paissatges naturals.",
+            "MYSTUDY": "Sobre els meus estudis",
+            "DESCMYSTUDY": "Al 2016 vaig entrar a la UAB (Universitat Autonóma de Barcelona) i vaig començar una enginyeria informatica fins avui. Estic especialitzat a la secció de les TIC (Tecnologies de la Informació y Communicació).",
+            "MYEXP": "Sobre la meva experiència laboral",
+            "DESCMYEXP": "He treballat com a desenvolupador Front-end durant uns mesos, on vaig aprendre les bases del desenvolupament web. Actualmente estic aprenent la feina d'administrador de sistemes i enriquient moltissim la meva experiencia. M'encanta aprendre coses noves!"
         },
         "CONTACT": {
             "CONTACTME": "Pots contactar-me mitjançant...",
@@ -187,7 +241,34 @@ angular
             "DESCCVWEB": "Aquest  projecte és la web que estas llegint ara mateix, i va começar per posar a proba les meves habilitats adquirides i el que vaig aprendre com a desenvolupador Front-End. Si vols veure el codi font, ves a comprovar-lo. ;)",
             "DESCSTARTDO": "L'objectiu d'aquest projecte es fer senzull el desplegament de maquines sense la necessitat de haver de comprar una infraestructura per fer proves. Pots desplegar unes poques maquines molt ràpid i començar a provar eines com Ansible. Cultura DevOps, hello world!"
         },
-        "RESUME": {},
+        "RESUME": {
+            "SOMESKILLS": "Algunes habilitats:",
+            "SHOWANOTHER": "Mostrar una altra",
+            "SHOWALL": "Mostrar totes",
+            "SOCIALSKILL": "Habilitat Social",
+            "SOCIALSKILLS": "Habilitats Socials",
+            "TECHKNOW": "Coneixement d'una Tecnologia",
+            "TECHKNOWS": "Coneixement de Tecnologies",
+            "PROGLANG": "Llenguatge de Programació",
+            "PROGLANGS": "Llenguatges de Programació",
+            "LEARNTECH": "Tecnologia en Aprenentatge",
+            "LEARNTECHS": "Tecnologies en Aprenentatge",
+            "NONCOMP": "Habilitats no Informátiques",
+            "LANG": "Idioma",
+            "MOBIL": "Mobilitat",
+            "SS": {
+                "TW": "Treball en equip",
+                "GOODINT": "Bones relacions interpersonals",
+                "EFFCOM": "Comunicació effectiva",
+                "CURI": "Curiositat"
+            },
+            "NCS": {
+                "CAT": "Català Natiu",
+                "ES": "Castallà Natiu",
+                "EN": "Anglés Medio - Alto",
+                "CAR": "Carnet de Conduir de cotxe B2"
+            }
+        },
         "GENERAL": {
             "HOME": "Inici",
             "PROJECTS": "Projectes",
