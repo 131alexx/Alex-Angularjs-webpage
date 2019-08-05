@@ -5,7 +5,7 @@ angular.module( 'appApp' )
     this.section = "Resume";
     this.skill = "";
     this.skillType = "";
-    this.aConduct = [ 'Teamworking skills', 'Good interpersonal skills', 'Efective Communication', 'Curiosity', 'Scrum', 'Kanban' ];
+    this.aConduct = [ 'RESUME.SS.TW', 'RESUME.SS.GOODINT', 'RESUME.SS.EFFCOM', 'RESUME.SS.CURI', 'Scrum', 'Kanban' ];
     this.aSkills = [ 'Docker', 'Jenkins', 'Ansible', 'Docker Swarm', 'Git', 'Debian OS' ];
     //Programming Languages
     this.aPL = [ "C", "C++", "Python", "Node.js", "Java EE", "Bash Scriping" ];
@@ -24,13 +24,13 @@ angular.module( 'appApp' )
         }
         while ( element === this.skill );
         this.skill = element;
-        if ( this.aConduct.indexOf( this.skill ) !== -1 ) this.skillType = "Social Skill";
+        if ( this.aConduct.indexOf( this.skill ) !== -1 ) this.skillType = "RESUME.SOCIALSKILL";
 
-        if ( this.aSkills.indexOf( this.skill ) !== -1 ) this.skillType = "Technology Knowledge";
+        if ( this.aSkills.indexOf( this.skill ) !== -1 ) this.skillType = "RESUME.TECHKNOW";
 
-        if ( this.aPL.indexOf( this.skill ) !== -1 ) this.skillType = "Programming Language";
+        if ( this.aPL.indexOf( this.skill ) !== -1 ) this.skillType = "RESUME.PROGLANG";
 
-        if ( this.aLT.indexOf( this.skill ) !== -1 ) this.skillType = "Learning Technology";
+        if ( this.aLT.indexOf( this.skill ) !== -1 ) this.skillType = "RESUME.LEARNTECH";
     }
     this.addOtherSkill = function ( name_, type_ ) {
         this.aOtherSkills.push( {
@@ -41,14 +41,14 @@ angular.module( 'appApp' )
     //Init function
     ( ( ) => {
         this.changeSkill( );    
-        this.addOtherSkill("Native Catalan","Language");
+        this.addOtherSkill("RESUME.NCS.CAT","RESUME.LANG");
 
-        this.addOtherSkill("Native Spanish","Language");
+        this.addOtherSkill("RESUME.NCS.ES","RESUME.LANG");
 
-        this.addOtherSkill("Upper Intermediate English","Language");
+        this.addOtherSkill("RESUME.NCS.EN","RESUME.LANG");
 
 
-        this.addOtherSkill("B2 Car License","Mobility");
+        this.addOtherSkill("RESUME.NCS.CAR","RESUME.MOBIL");
 
     } )( )
 } ] );

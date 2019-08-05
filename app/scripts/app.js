@@ -253,7 +253,7 @@ angular
             "PROGLANGS": "Llenguatges de Programació",
             "LEARNTECH": "Tecnologia en Aprenentatge",
             "LEARNTECHS": "Tecnologies en Aprenentatge",
-            "NONCOMP": "Habilitats no Informátiques",
+            "NONCOMP": "Habilitats no Informàtiques",
             "LANG": "Idioma",
             "MOBIL": "Mobilitat",
             "SS": {
@@ -265,7 +265,7 @@ angular
             "NCS": {
                 "CAT": "Català Natiu",
                 "ES": "Castallà Natiu",
-                "EN": "Anglés Medio - Alto",
+                "EN": "Anglés Mig - Alt",
                 "CAR": "Carnet de Conduir de cotxe B2"
             }
         },

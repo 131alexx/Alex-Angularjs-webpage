@@ -1,24 +1,24 @@
 <div class="jumbotron mt-5 h-50">
     <h3 class="s-component s-text s-animation-page-slide_in">
-        Some of my skills:
+        {{ 'RESUME.SOMESKILLS' | translate }}
     </h3>
     <div>
         <h1 style="height: 250px;position: relative;" class="text-center p-5 w3-animate-opacity blockquote" ng-show="resumeCtrl.skill">
             <div class="display-1 h-50">
-                {{ resumeCtrl.skill }}
+                {{ resumeCtrl.skill | translate }}
             </div>
             <div class="blockquote-footer float-right" style="position: absolute;bottom: 0; right: 0">
-                {{resumeCtrl.skillType}}
+                {{ resumeCtrl.skillType | translate }}
             </div>
         </h1>
     </div>
     <div >
         
     <button class="btn btn-primary" ng-click="resumeCtrl.changeSkill()">
-        Show another
+        {{ 'RESUME.SHOWANOTHER' | translate }}
     </button>
     <button class="btn btn-info" ng-click="resumeCtrl.displayAll = true;">
-        Show all
+        {{ 'RESUME.SHOWALL' | translate }}
     </button>
     </div>
 </div>
@@ -26,15 +26,15 @@
     <div class="row w3-animate-top" ng-if="resumeCtrl.displayAll">
         <div class="col">
             <h3 class="rounded bg-info text-light p-2">
-                Social Skills
+                {{ 'RESUME.SOCIALSKILLS' | translate }}
             </h3>
             <p ng-repeat="ss in resumeCtrl.aConduct">
-                {{ss}}
+                {{ ss | translate }}
             </p>
         </div>
         <div class="col">
             <h3 class="rounded bg-info text-light p-2">
-                Technologies Knowledge
+                {{ 'RESUME.TECHKNOWS' | translate }}
             </h3>
             <p ng-repeat="tk in resumeCtrl.aSkills">
                 {{tk}}
@@ -42,7 +42,7 @@
         </div>
         <div class="col">
             <h3 class="rounded bg-info text-light p-2">
-                Programming languages
+                {{ 'RESUME.PROGLANGS' | translate }}
             </h3>
             <p ng-repeat="pl in resumeCtrl.aPL">
                 {{pl}}
@@ -50,7 +50,7 @@
         </div>
         <div class="col">
             <h3 class="rounded bg-info text-light p-2">
-                Learning Technologies
+                {{ 'RESUME.LEARNTECHS' | translate }}
             </h3>
             <p ng-repeat="lt in resumeCtrl.aLT">
                 {{lt}}
@@ -59,7 +59,7 @@
     </div>
 </div>
 <h4 class="rounded bg-info text-light p-2">
-     Non-computer Skills
+     {{ 'RESUME.NONCOMP' | translate}}
 </h4>
 <div ng-repeat="skill in resumeCtrl.aOtherSkills">
     <div class="row m-3">
@@ -67,12 +67,12 @@
             <h5 class="col-3">
                 <strong>
                     
-                {{skill.name}}
+                {{ skill.name | translate}}
                 </strong>
             
             </h5>
             <div class=" col mt-3 ml-3">
-                - {{skill.type}}
+                - {{ skill.type | translate }}
             </div>
         
     </div>
