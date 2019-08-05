@@ -1,33 +1,31 @@
 <div class="row">
     <div class="col">
         <h3>
-            Hello!
+            {{ 'ABOUT.REGARDS' | translate }}
         </h3>
         <p>
-            I'm Àlex and this my about page.
+            {{ 'ABOUT.PRESENTATION1' | translate }}
         </p>
         <p>
-            I'm a {{aboutCtrl.age}} year old guy passionate about computer science and mathematics.
-        </p>
-        <strong>
-            About what I love
-        </strong>
-        <p>
-            In my free time, I listen to music, go out with my friends, read things on the Internet and do some exercise when I can.
-            I love traveling with my family and discover new places with natural landscapes.
+            {{ 'ABOUT.PRESENTATION21' | translate }} {{aboutCtrl.age}} {{ 'ABOUT.PRESENTATION22' | translate }}
         </p>
         <strong>
-            About my studies
+            {{ 'ABOUT.ILOVE' | translate }}
         </strong>
-        <p>
-            
-In 2016 I entered the UAB(Autonomous University of Barcelona) and coursed a computer engeneering since today. I specialized on the section of Information and Comunication Technologies.
+        <p style="text-align: justify;">
+            {{ 'ABOUT.DESCILOVE' | translate }}
         </p>
         <strong>
-            About my work experience
+            {{ 'ABOUT.MYSTUDY' | translate }}
         </strong>
-        <p>
-            I've worked as a Front-End for a few months, where i learned the basics of the web development. I'm currently learning the system administrator job and enriching my experience a lot. I love learning new things!
+        <p style="text-align: justify;">
+            {{ 'ABOUT.DESCMYSTUDY' | translate }}
+        </p>
+        <strong>
+            {{ 'ABOUT.MYEXP' | translate }}
+        </strong>
+        <p style="text-align: justify;">
+            {{ 'ABOUT.DESCMYEXP' | translate }}
         </p>
     </div>
     <div class="col-sm-8">

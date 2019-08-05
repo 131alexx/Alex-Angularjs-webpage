@@ -44,7 +44,18 @@ angular
 
     $translateProvider.translations( 'en', {
         "TEST": "Hello",
-        "ABOUT": {},
+        "ABOUT": {
+            "REGARDS":"Hello!",
+            "PRESENTATION1":"I'm Àlex and this my about page.",
+            "PRESENTATION21":"I'm a ",
+            "PRESENTATION22":"year old guy passionate about computer science and mathematics.",
+            "ILOVE":"About what I love",
+            "DESCILOVE":"In my free time, I listen to music, go out with my friends, read things on the Internet and do some exercise (as much as I can). I love traveling with my family and discover new places with natural landscapes.",
+            "MYSTUDY":"About my studies",
+            "DESCMYSTUDY":"In 2016 I entered the UAB(Autonomous University of Barcelona) and coursed a computer engeneering since today. I specialized on the section of ITC (Information and Comunication Technologies).",
+            "MYEXP":"About my work experience",
+            "DESCMYEXP":"I've worked as a Front-End for a few months, where i learned the basics of the web development. I'm currently learning the system administrator job and enriching my experience a lot. I love learning new things!"
+        },
         "CONTACT": {
             "CONTACTME": "You can contact me using...",
 
@@ -85,7 +96,18 @@ angular
 
     $translateProvider.translations( 'es', {
         "TEST": "Hola",
-        "ABOUT": {},
+        "ABOUT": {
+                 "REGARDS":"Buenas!",
+            "PRESENTATION1":"Soy Àlex, y esta es la página sobre mi.",
+            "PRESENTATION21":"Soy un chico de ",
+            "PRESENTATION22":"años apasionado por la informatica y las matemáticas.",
+            "ILOVE":"Sobre lo que me encanta",
+            "DESCILOVE":"En mi tiempo libre, escucho musica, salgo con amigos, leo actualidad en Internet y hago ejercicio (tanto como puedo). Me encanta viajar con mi familia y descubrir nuevos sitios con paisajes naturales.",
+            "MYSTUDY":"Sobre mis estudios",
+            "DESCMYSTUDY":"En 2016 entré en la UAB (Universidad Autonoma de Barcelona) y comencé una ingenieria informatica hasta hoy. Estoy especializadoen la sección de TIC (Tecnologias de la Información y Comunicación).",
+            "MYEXP":"Sobre mi experiencia laboral",
+            "DESCMYEXP":"He trabajado como desarrollador Front-End durante unos meses, donde aprendí las bases del desarrollo web. Actualmente estoy aprendiendo el trabajo de un administrador de sistemas y enriqueciendo muchísimo mi experiencia. Me encanta aprender cosas nuevas!"
+        },
         "CONTACT": {
             "CONTACTME": "Puedes contactarme mediante...",
 
@@ -128,7 +150,18 @@ angular
 
     $translateProvider.translations( 'ca', {
         "TEST": "Hola",
-        "ABOUT": {},
+        "ABOUT": {
+                 "REGARDS":"Bones!",
+            "PRESENTATION1":"Soc Àlex, i aquesta és la pàgina sobre mi.",
+            "PRESENTATION21":"Soc un noi de ",
+            "PRESENTATION22":"anys apassionat per la informàtica y las matemàtiques.",
+            "ILOVE":"Sobre el que m'encanta",
+            "DESCILOVE":"En el meu temps lliure, escolto música, surto amb els amics, llegeixo l'actualitat a Internet i faig exercici (tant com puc). M'encanta viatjar amb la meva familia i descobrir nous llocs amb paissatges naturals.",
+            "MYSTUDY":"Sobre els meus estudis",
+            "DESCMYSTUDY":"Al 2016 vaig entrar a la UAB (Universitat Autonóma de Barcelona) i vaig començar una enginyeria informatica fins avui. Estic especialitzat a la secció de les TIC (Tecnologies de la Informació y Communicació).",
+            "MYEXP":"Sobre la meva experiència laboral",
+            "DESCMYEXP":"He treballat com a desenvolupador Front-end durant uns mesos, on vaig aprendre les bases del desenvolupament web. Actualmente estic aprenent la feina d'administrador de sistemes i enriquient moltissim la meva experiencia. M'encanta aprendre coses noves!"
+        },
         "CONTACT": {
             "CONTACTME": "Pots contactar-me mitjançant...",
 
