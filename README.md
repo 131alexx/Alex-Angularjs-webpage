@@ -6,3 +6,6 @@ The webpage has some features
 * Texts are **translated** in Spanish, English and Catalan.
 * In the home page, it has a very easy **game**.
 * In the resume page, there is an interactionable **simple app**.
+
+## TODOs
+* Testing
