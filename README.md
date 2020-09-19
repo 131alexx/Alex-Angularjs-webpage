@@ -7,5 +7,3 @@ The webpage has some features
 * In the home page, it has a very easy **game**.
 * In the resume page, there is an interactionable **simple app**.
 
-## TODOs
-* Testing
